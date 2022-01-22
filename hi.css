@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+#brand {
+    background-color: aquamarine;
+    width: fit-content;
+    transform: rotate(90deg);
+    position: fixed;
+    margin-left: -42px;
+    margin-top: 35vh;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+#brand a{
+    text-decoration: none;
+    color: lightcoral;
+}
+#brand:hover {
+    transform: translateX(120%);
+}
+.header {
+    width: 100vw;
+    height: 30vh;
+    background-color: lightcoral;
+}
+.header_contain {
+    text-align: center;
+    padding: 80px 0;
+}
+h1 {
+    color: aliceblue;
+    animation: fadeInDown;
+    animation-duration: 1.5s;
+}
+.content {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.main_content {
+    width: 60vw;
+    height: 50vh;
+    border: 2px solid rgb(245, 241, 239);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(27, 25, 25);
+}
+.button {
+    text-align: center;
+}
+#btn {
+    margin-top: 20px;
+    background-color: rgb(243, 50, 50);
+    color: aliceblue;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+#btn:active {
+    background-color: rgb(250, 185, 5);
+}
+.image {
+    margin: auto 0;
+    width: 200px;
+    height: 200px;
+}
+#shaking {
+    width: 200px;
+    height: 200px;
+    display: none;
+    margin: auto;
+}
+.contain_name {
+    margin: 0 auto;
+}
+#Name{
+    margin: 8px auto;
+    padding: 5px;
+    background-color: lightpink;
+    border-radius: 10px;
+    width: 15vw;
+    font-size: 25px;
+    font-weight: 400;
+    visibility: hidden;
+}
+.shaking_action {
+    width: 100px;
+    height: 100px;
+    display: none;
+    animation-name: action;
+    animation-duration: 3s;
+}
+@keyframes action {
+    0% {
+        transform: rotateX(0) translateY(50px);
+    }
+    20% {
+        transform: rotateX(50deg) translateY(0);
+    }
+    40% {
+        transform: rotateX(30deg) translateY(50px);
+    }
+    60% {
+        transform: rotateX(50deg) translateY(0);
+    }
+    80% {
+        transform: rotateX(30deg) translateY(50px);
+    }
+    100% {
+        transform: rotateX(0) translateY(0);
+    }
+}
+

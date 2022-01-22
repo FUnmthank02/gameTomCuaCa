@@ -5,7 +5,7 @@ var img3 = document.getElementById('img3');
 var img_shake = document.getElementById('shaking');
 var title_Name = document.getElementById('Name');
 
-var img = ['Tom', 'Cua', 'Ca', 'Ga', 'Bau', 'Nai'];
+var img = ['Shrimp', 'Crab', 'Fish', 'Chicken', 'Wine', 'Deer'];
 
 function deleteOld() {
     img1.classList.remove('animate__animated', 'animate__fadeInLeft');

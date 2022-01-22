@@ -91,9 +91,9 @@ h1 {
     padding: 5px;
     background-color: lightpink;
     border-radius: 10px;
-    width: 15vw;
-    font-size: 25px;
-    font-weight: 400;
+    width: 25vw;
+    font-size: 20px;
+    font-weight: bold;
     visibility: hidden;
 }
 .shaking_action {
@@ -123,4 +123,6 @@ h1 {
         transform: rotateX(0) translateY(0);
     }
 }
+
+
 

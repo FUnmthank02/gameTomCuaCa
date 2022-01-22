@@ -1,7 +1,7 @@
 /* mobile */
 @media only screen and (max-width: 599px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .header {
         width: 100vw;
@@ -27,21 +27,24 @@
     }
     .image {
         width: 150px;
-        height: 150px;
-        margin: 7px auto;
+        height: 136.6px;
+        margin: 15px auto;
     }
     #shaking {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         display: none;
-        margin: 164px auto;
+        margin: 170px auto;
+    }
+    #btn {
+        margin-top: 8px;
     }
     
 }
 /* tablet */
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .header {
         width: 100vw;
@@ -75,7 +78,7 @@
 }
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .header {
         width: 100vw;

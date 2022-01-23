@@ -14,27 +14,27 @@
     h1{
         font-size: 1.8em;
     }
+    .image {
+        width: 130px;
+        height: 16vh;
+        margin: 10px auto;
+    }
     .main_content {
         display: block;
         width: 70vw;
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        height: 60vh;
+        padding: 0 11px;
     }
     #Name{
         width: 70vw;
         font-size: 15px;
     }
-    .image {
-        width: 150px;
-        height: 136.6px;
-        margin: 15px auto;
-    }
+    
     #shaking {
         width: 130px;
         height: 130px;
         display: none;
-        margin: 170px auto;
+        margin: 18vh auto;
     }
     #btn {
         margin-top: 8px;
@@ -56,24 +56,23 @@
     }
     .main_content {
         display: block;
-        width: 70vw;
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        width: 65vw;
+        height: 57vh;
+        padding: 5px 70px;
     }
     h1 {
         font-size: 2em;
     }
     .image {
         width: 180px;
-        height: 180px;
+        height: 16vh;
         margin: 7px auto;
     }
     #shaking {
         width: 150px;
         height: 150px;
         display: none;
-        margin: 209px auto;
+        margin: 20vh auto;
     }
 }
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {

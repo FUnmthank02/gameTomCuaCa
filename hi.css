@@ -123,6 +123,9 @@ h1 {
         transform: rotateX(0) translateY(0);
     }
 }
+#audio_shake, #audio_open {
+    display: none;
+}
 
 
 

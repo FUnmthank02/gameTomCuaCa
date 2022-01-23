@@ -4,6 +4,8 @@ var img2 = document.getElementById('img2');
 var img3 = document.getElementById('img3');
 var img_shake = document.getElementById('shaking');
 var title_Name = document.getElementById('Name');
+var audio_shake = document.getElementById('audio_shake');
+var audio_open = document.getElementById('audio_open');
 
 var img = ['Shrimp', 'Crab', 'Fish', 'Chicken', 'Wine', 'Deer'];
 
@@ -15,7 +17,24 @@ function deleteOld() {
 }
 
 function textName(a, b, c) {
-    title_Name.innerHTML = img[a] +' - '+ img[b] +' - '+ img[c];
+    var m = img[4] + ' gourd';
+    if(a == 4) 
+        title_Name.innerHTML = m +' - '+ img[b] +' - '+ img[c];
+    if(b == 4)
+        title_Name.innerHTML = img[a] +' - '+ m +' - '+ img[c];  
+    if(c == 4)
+        title_Name.innerHTML = img[a] +' - '+ img[b] +' - '+ m;    
+    if(a == 4 && b == 4) 
+        title_Name.innerHTML = m +' - '+ m +' - '+ img[c];
+    if(a == 4 && c == 4)
+        title_Name.innerHTML = m +' - '+ img[b] +' - '+ m;
+    if(b == 4 && c == 4)
+        title_Name.innerHTML = img[b] +' - '+ m +' - '+ m;    
+    if(a == 4 && b == 4 && c == 4)
+        title_Name.innerHTML = m +' - '+ m +' - '+ m;
+    if(a != 4 && b != 4 && c != 4)
+        title_Name.innerHTML = img[a] +' - '+ img[b] +' - '+ img[c];
+
     title_Name.style.visibility = "visible";
     title_Name.classList.add('animate__animated', 'animate__fadeInDown');
     setTimeout(deleteOld, 1000);
@@ -37,16 +56,25 @@ function display_img() {
     img3.style.display = "block";
 }
 
+function playAudioShake() {
+    audio_shake.play();
+}
+
+function playAudioOpen() {
+    audio_open.play();
+}
+
 function shake() {      //hanh dong xuc sac
     del_image();
     img_shake.style.display = "block";
     title_Name.style.visibility = "hidden";
+    playAudioShake()
     setTimeout(del_shake, 3000)
 }
 
 function randomImg() {      //Random ra 3 hinh nah
     display_img();
-
+    playAudioOpen();
     var a = Math.floor(Math.random() *6);
     img1.src = `./img/${img[a]}.png`
     img1.classList.add('animate__animated', 'animate__fadeInLeft');
